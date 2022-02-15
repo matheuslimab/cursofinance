@@ -1,11 +1,32 @@
 {
-  "expo": {
-    "name": "artikoo",
-    "slug": "artikoo",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "artikoo"
+    "expo": {
+        "name": "Artikoo",
+        "slug": "artikoo",
+        "scheme": "artikoo",
+        "version": "1.0.0",
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+
+        "plugins": [
+            [
+                "expo-ads-admob",
+                {
+                    "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+                }
+            ]
+        ],
+
+        "android": {
+            "package": "com.reppitih.artikoo",
+            "config": {
+                "googleMobileAdsAppId": "ca-app-pub-3940256099942544~3347511713"
+            }
+        }
+    },
+    "android": {
+        "package": "com.artikoo",
+        "versionCode": 1
+    },
+    "name": "artikoo"
 }

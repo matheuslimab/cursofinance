@@ -8,20 +8,31 @@ import {
 } from 'react-native';
 
 
-export function profile() {
+export function Profile() {
   return (
     <View>
       
-        <Text>Profile</Text>
+        <Text testID='profile-title'>Profile</Text>
 
         <TextInput
+            testID='input-name'
             placeholder="Seu nome"
             autoCorrect={false}
-            
+            value='Ana Clara'
+        />
+
+        <TextInput
+          testID='input-surname'
+          placeholder="Sobrenome"
+          value='Rocha'
+        />
+
+        <Button 
+          testID='button-salvar'
+          title="Salvar" 
+          onPress={() => {}}
         />
 
     </View>
   )
 }
-
-const styles = StyleSheet.create({})
